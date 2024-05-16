@@ -2,7 +2,7 @@
 ![PyTorch >=1.12](https://img.shields.io/badge/PyTorch->=1.8-blue.svg)
 
 # Plug-and-Play Pseudo Label Correction Network for Unsupervised Person Re-identification [[pdf]](https://arxiv.org/abs/2206.06607)
-The *official* repository for [PASS: Part-Aware Self-Supervised Pre-Training for Person Re-Identification](https://arxiv.org/abs/2203.03931)
+The *official* repository for [Plug-and-Play Pseudo Label Correction Network for Unsupervised Person Re-identification](https://arxiv.org/abs/2203.03931)
 
 ## Requirements
 
@@ -39,6 +39,26 @@ data
 │   └── ..
 └── LUP
     └── images 
+```
+
+## Getting Started
+
+### Train
+You can run these commands in .sh files for training different datasets with GLC.
+
+1.Market1501
+```bash
+bash PASS_cluster_contrast_reid/shell/market_usl_glc_restart.sh 
+```
+2.MSMT17
+```bash
+bash PASS_cluster_contrast_reid/shell/msmt_usl_glc_restart.sh 
+```
+
+### Usage
+Our GLC is plug and play, you can insert the module to ReID method for higher performance.
+```bash
+from star.run_ import run_cluster
 ```
 
 ## Pre-trained Models
@@ -83,7 +103,7 @@ We have reproduced the performance to verify the reproducibility. The reproduced
 ## Acknowledgment
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
 
-[PASS](https://github.com/CASIA-IVA-Lab/PASS-reID),[TransReID-SSL](https://github.com/damo-cv/TransReID-SSL),[cluster-contrast-reid](https://github.com/alibaba/cluster-contrast-reid)and[STAR-FC](https://github.com/sstzal/STAR-FC)
+[PASS](https://github.com/CASIA-IVA-Lab/PASS-reID),[TransReID-SSL](https://github.com/damo-cv/TransReID-SSL),[cluster-contrast-reid](https://github.com/alibaba/cluster-contrast-reid),[STAR-FC](https://github.com/sstzal/STAR-FC)
 
 ## Citation
 

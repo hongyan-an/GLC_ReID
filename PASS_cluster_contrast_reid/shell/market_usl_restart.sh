@@ -1,0 +1,2 @@
+# VIT-S
+CUDA_VISIBLE_DEVICES=2,3,6,7 nohup python examples/cluster_contrast_train_usl_restart.py -b 256 -a vit_small -d market1501 --data-dir '/data/yantianyi/reid_data/' --iters 200 --eps 0.6 --self-norm --use-hard --hw-ratio 2 --num-instances 8 -pp "/data/yantianyi/pretrain_model/reid/PASS/pretrained_model/pass_vit_small_full.pth" --logs-dir ./log/cluster_contrast_reid_restart/market/pass_vit_small_cat_singlenecki_restart_20_00004_10 --feat-fusion 'cat' &> nohup_usl_market_pass_restart_20_5_0.0004_10_3_18.out &

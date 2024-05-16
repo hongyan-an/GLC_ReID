@@ -1,0 +1,2 @@
+# VIT-S
+CUDA_VISIBLE_DEVICES=6,7 nohup python examples/cluster_contrast_train_usl_gcn_restart.py -b 256 -a vit_small -d msmt17 --data-dir '/data/yantianyi/reid_data/' --iters 200 --eps 0.7 --self-norm --use-hard --hw-ratio 2 --num-instances 8 -pp "/data/yantianyi/pretrain_model/reid/PASS/uda_model/transformer_120_PASS_market.pth" --logs-dir ./log/cluster_contrast_reid_uda/market2msmt_glc_restart/pup_vit_small_full_lup_multineck_mean_10_5_15_0.00055_15 --feat-fusion 'mean' --multi-neck &> nohup_usl_market2msmt_pass_10_5_15_0.00055_15_3_16.out &

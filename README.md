@@ -1,6 +1,6 @@
 ![Python >=3.7](https://img.shields.io/badge/Python->=3.7-yellow.svg)
 ![PyTorch >=1.12](https://img.shields.io/badge/PyTorch->=1.8-blue.svg)
-
+![image](img/overview.png)
 # Plug-and-Play Pseudo Label Correction Network for Unsupervised Person Re-identification [[pdf]](https://arxiv.org/abs/2206.06607)
 The *official* repository for [Plug-and-Play Pseudo Label Correction Network for Unsupervised Person Re-identification](https://arxiv.org/abs/2203.03931)
 

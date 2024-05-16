@@ -1,2 +1,0 @@
-# VIT-S
-CUDA_VISIBLE_DEVICES=2,3,6,7 python examples/cluster_contrast_train_usl_restart.py -b 256 -a vit_small -d market1501 --data-dir '/data/yantianyi/reid_data/' --iters 200 --eps 0.6 --self-norm --use-hard --hw-ratio 2 --num-instances 8 -pp "/data/yantianyi/pretrain_model/reid/PASS/uda_model/transformer_120_PASS_MSMT.pth" --logs-dir ./log/cluster_contrast_reid_restart/msmt2market/vit_small_full_multineck_cat_20_0.0004 --feat-fusion 'cat' --multi-neck &> nohup_usl_msmt2market_restart_pass_20_0.0004_3_20.out &
